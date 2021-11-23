@@ -49,7 +49,7 @@ If  Up signal == 1, the current flows from Vdd to output capacitor thus charging
 If Down signal == 1, the current flows from output capacitor to Ground and thus discharging the Capacitor.<br>
 The output of the charge pump depends on the average time of Up being 1 and Down being 1. If the average time with Up being 1 is more, output voltage increases and the voltage across capacitor decreases in other case.<br>
 
-But there can be leakage current even if both Up and Down are 0.This leakage current can impact the output signal and inturn the performance of VCO. Moreover, there can be frequency fluctuations at the output of the Charge Pump and this can be taken care with the help of a Low Pass Filter (LPF) at the output.
+But there can be leakage current even if both Up and Down are 0.This leakage current can impact the output signal and inturn the performance of VCO. Moreover, there can be frequency fluctuations at the output of the Charge Pump and this can be taken care with the help of a **Low Pass Filter (LPF)** at the output.
 
 Charge Pump Circuit with LPF at the output<br>
 ![Alt Text](chargepump2.PNG)
@@ -60,3 +60,7 @@ Thumb rules for component values
 
 1. Output Capacitance = Capacitance of LPF/10
 2. Loop Filter Bandwidth ~= (Highest output Frequency)/10 Loop filter Bandwidth is 1/(1+RC1) where C1 = (C*Cx)/C+Cx
+
+### 3.Voltage Controller Oscillator(VCO)
+
+
