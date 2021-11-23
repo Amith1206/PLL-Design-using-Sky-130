@@ -94,7 +94,7 @@ Eg. Divider by 8 can be obtainbed using 4 div by 2 circuits
 ## Design Flow & Tools
 ![Alt Text](desflow.jpeg)<br>
 
-Tools Used : Magic& ngspice
+Tools Used : Magic(Transistor level circuit simulation) & ngspice(Transistor level circuit simulation)
 
 ## Skywater 130nm PDK Overview
 ![Alt Text](sky.PNG)<br>
@@ -103,7 +103,7 @@ Tools Used : Magic& ngspice
 
 8x multiplier PLL specifications for this workshop
 
-- TT - Corner (Typical Typical)
+- TT - Corner (Typical-Typical: Represents the outcome of the doping process...other SS FF etc.)
 - VDD (Digital Supply) - 1.8V
 - Temperature - Room Temeperature (27C)
 - Both VCO and PLL Modes
