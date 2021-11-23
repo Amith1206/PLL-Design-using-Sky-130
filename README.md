@@ -39,7 +39,7 @@ PFD Circuit is used to compare the input reference and output feedback signals t
 When the phase difference between reference signal and feedback signal is very very small, the PFD circuit does not detect as Up/Down signals are not given enough time to toggle completely. This condition is called Dead Zone.Hence more precise circuit should be designed.
 
 
-### 2.Charge Pump
+### 2. Charge Pump
 ![Alt Text](chargepump.PNG)
 
 Charge Pump converts the digital input to a analog signal which is used by Voltage Controlled Oscillator(VCO) circuit. Charge Pump can ge designed using current steering circuit.
@@ -56,7 +56,7 @@ But there can be leakage current even if both Up and Down are 0.This leakage cur
 <br>
 LPF helps in limiting high frequency fluctuations and  maintains the stability of the entire PLL control system as we are adding a Pole to the system.
 
-Thumb rules for component values
+**Thumb rules for component values**
 
 1. Output Capacitance = Capacitance of LPF/10
 2. Loop Filter Bandwidth ~= (Highest output Frequency)/10 Loop filter Bandwidth is 1/(1+RC1) where C1 = (C*Cx)/C+Cx
@@ -74,7 +74,7 @@ If a large current is supplied at the output, the output gets charged faster.<br
 Current starving mechanism can be used to obtain flexibility(variable frequences). <br>
 It should be kept in mind while designing circut that the frequencies that VCO generates must be in the same range of frequencies that the PLL supports.
 
-### 4.Frequency Divider
+### 4.  Frequency Divider
 ![Alt Text](FD.PNG)
 **Freq divider by 2**
 <br>
