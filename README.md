@@ -111,3 +111,6 @@ Tools Used : Magic& ngspice
 - Output Clock Frequency - 40MHz to 100MHz
 - Jitter (RMS) <~20ns
 - Duty Cycle -50%
+<br>
+![Alt Text](pinloc.PNG)<br>
+
