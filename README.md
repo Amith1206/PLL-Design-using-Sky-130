@@ -99,3 +99,15 @@ Tools Used : Magic& ngspice
 ## Skywater 130nm PDK Overview
 ![Alt Text](sky.PNG)<br>
 
+## PLL Circuit Specs
+
+8x multiplier PLL specifications for this workshop
+
+- TT - Corner (Typical Typical)
+- VDD (Digital Supply) - 1.8V
+- Temperature - Room Temeperature (27C)
+- Both VCO and PLL Modes
+- Reference Clock Frequency - 5MHz to 12.5MHz
+- Output Clock Frequency - 40MHz to 100MHz
+- Jitter (RMS) <~20ns
+- Duty Cycle -50%
