@@ -20,8 +20,8 @@ In simple terms,A phase-locked loop is a closed-loop feedback control circuit th
 <br>
 
 ## Block Diagram of PLL
-[![vsd1.png](https://i.postimg.cc/zf1pkYcW/vsd1.png)](https://postimg.cc/qNj8kS0M)
-![Alt Text](vsd1.png)
+
+![Alt Text](vsd1.PNG)
 
 ## Components in detail
 
@@ -30,9 +30,9 @@ In simple terms,A phase-locked loop is a closed-loop feedback control circuit th
 PFD Circuit is used to compare the input reference and output feedback signals to generate Up and Down signals depending on whether feedback signal leads or lags compared to reference signal.
 
 #### State Diagram
-
+![Alt Text](SD_PFD.png)
 
 #### Circuit
-
+![Alt Text](pfd_ckt.png)
 #### Drawback
 When the phase difference between reference signal and feedback signal is very very small, the PFD circuit does not detect as Up/Down signals are not given enough time to toggle completely. This condition is called Dead Zone.Hence more precise circuit should be designed.
