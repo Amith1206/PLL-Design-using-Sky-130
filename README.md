@@ -83,5 +83,11 @@ A frequency divider circuit generates an output signal with a frequency reduced 
 Multiple Frequency divider by 2 circuit can be cascaded to get frequency divided by a certain factor (multiple of 2) circuit.<br>
 Eg. Divider by 8 can be obtainbed using 4 div by 2 circuits
 
+## Common Terms wrt PLL
 
+- Lock range: It is the range of frequencies for which PLL will maintain its locked state given that it is already in locked state.
+
+- Capture Range: It is the range of frequencies for which PLL comes to locked state from unlocked state(<Lock range)
+
+- Settling Time: It is the time taken by the PLL to attain a lock from the initial unlocked state.
 
