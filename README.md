@@ -43,15 +43,15 @@ When the phase difference between reference signal and feedback signal is very v
 ![Alt Text](chargepump.PNG)
 
 Charge Pump converts the digital input to a analog signal which is used by Voltage Controlled Oscillator(VCO) circuit. Charge Pump can ge designed using current steering circuit.
-
+***
 #### Working
 If  Up signal == 1, the current flows from Vdd to output capacitor thus charging it.<br>
 If Down signal == 1, the current flows from output capacitor to Ground and thus discharging the Capacitor.<br>
 The output of the charge pump depends on the average time of Up being 1 and Down being 1. If the average time with Up being 1 is more, output voltage increases and the voltage across capacitor decreases in other case.<br>
-
+***
 But there can be leakage current even if both Up and Down are 0.This leakage current can impact the output signal and inturn the performance of VCO. Moreover, there can be frequency fluctuations at the output of the Charge Pump and this can be taken care with the help of a **Low Pass Filter (LPF)** at the output.
 
-Charge Pump Circuit with LPF at the output<br>
+**Charge Pump Circuit with LPF at the output**<br>
 ![Alt Text](chargepump2.PNG)
 <br>
 LPF helps in limiting high frequency fluctuations and  maintains the stability of the entire PLL control system as we are adding a Pole to the system.
@@ -62,8 +62,10 @@ Thumb rules for component values
 2. Loop Filter Bandwidth ~= (Highest output Frequency)/10 Loop filter Bandwidth is 1/(1+RC1) where C1 = (C*Cx)/C+Cx
 
 ### 3.Voltage Controller Oscillator(VCO)
-![Alt Text](VCO.PNG)
+![Alt Text](VCO.PNG)<br>
+
 VCO circuit is used to generate a signal with a frequency that varies depending on the voltage of the input signal(from Charge dump). It is implemented using a Ring Oscillator that has odd number of inverters with a specific delay connected in a series. This makes the output signal to toggle after a certain amount of delay.
+
 <br>
 Time Period of the signal generated = 2*(Delay of each inverter)*(number of inverters)
 <br>
@@ -72,7 +74,7 @@ If a large current is supplied at the output, the output gets charged faster.<br
 Current starving mechanism can be used to obtain flexibility(variable frequences). <br>
 It should be kept in mind while designing circut that the frequencies that VCO generates must be in the same range of frequencies that the PLL supports.
 
-### 4.Frquency Divider
+### 4.Frequency Divider
 ![Alt Text](FD.PNG)
 **Freq divider by 2**
 <br>
