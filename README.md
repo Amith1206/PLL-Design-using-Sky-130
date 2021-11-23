@@ -21,6 +21,7 @@ In simple terms,A phase-locked loop is a closed-loop feedback control circuit th
 
 ## Block Diagram of PLL
 [![vsd1.png](https://i.postimg.cc/zf1pkYcW/vsd1.png)](https://postimg.cc/qNj8kS0M)
+![Alt Text](vsd1.png)
 
 ## Components in detail
 
