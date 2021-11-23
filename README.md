@@ -91,3 +91,7 @@ Eg. Divider by 8 can be obtainbed using 4 div by 2 circuits
 
 - Settling Time: It is the time taken by the PLL to attain a lock from the initial unlocked state.
 
+## Design Flow & Tools
+![Alt Text](desflow.jpeg)
+
+Tools Used : Magic& ngspice
