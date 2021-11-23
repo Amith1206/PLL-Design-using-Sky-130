@@ -28,11 +28,17 @@ In simple terms,A phase-locked loop is a closed-loop feedback control circuit th
 ### 1. Phase Frequency Detector(PFD)
 
 PFD Circuit is used to compare the input reference and output feedback signals to generate Up and Down signals depending on whether feedback signal leads or lags compared to reference signal.
-
-#### State Diagram
-![Alt Text](SD_PFD.png)
-
-#### Circuit
+***
+#### **State Diagram**
+![Alt Text](SD_PFD.jpeg)
+***
+#### **Circuit**
 ![Alt Text](pfd_ckt.png)
-#### Drawback
+***
+#### **Drawback**
 When the phase difference between reference signal and feedback signal is very very small, the PFD circuit does not detect as Up/Down signals are not given enough time to toggle completely. This condition is called Dead Zone.Hence more precise circuit should be designed.
+
+
+### 2.Charge Pump
+Charge Pump converts the digital input to a analog signal which is used by Voltage Controlled Oscillator(VCO) circuit. Charge Pump can ge designed using current steering circuit.
+![Alt Text](vsd1.PNG)
