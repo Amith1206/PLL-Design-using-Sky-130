@@ -115,5 +115,9 @@ Tools Used : Magic& ngspice
 ![Alt Text](pinloc.PNG)<br>
 
 ## Individual Circuits for Pre-Layout
+![Alt Text](PreL_PFD.PNG)<br>
+![Alt Text](PreL_CP.PNG)<br>
+![Alt Text](VCO.PNG)<br>
+![Alt Text](PreL_FD.PNG)<br>
 
 
